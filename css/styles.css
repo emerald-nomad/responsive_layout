@@ -14,7 +14,7 @@ nav{
     margin: auto;
 }
 
-nav a{
+header nav a{
     color: inherit;
     text-decoration: none;
     font-size: 1.3em;
@@ -34,8 +34,11 @@ nav a{
 }
 
 #profile p {
+    margin: auto;
     margin-top: 20px;
     font-size: 1.1em;
+    width: 90%;
+
 }
 
 #portfolio {
@@ -88,22 +91,29 @@ nav a{
 }
 
 footer {
-    width: 95%;
+    width: 90%;
     margin: auto;
 }
 
-footer h4 {
+footer #name {
     float: left;
 }
 
-footer a {
-    text-decoration: none;
-    color: inherit;
+footer #f-mobile {
     float: right;
 }
 
+footer #f-mobile a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer #f-tablet {
+    display: none;
+}
+
 @media (min-width: 768px) {
-    nav a {
+    header nav a {
         display: inline-block;
         background-color: inherit;
         margin-right: 30px;
@@ -123,5 +133,57 @@ footer a {
        text-align: left;
     }
     
+    #p-sections {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    #p-sections section {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact {
+        width: 65%;
+        margin: auto;
+    }
+
+    footer #f-mobile {
+        display: none;
+    }
+
+    footer #f-tablet {
+        display: block;
+        float: right;
+    }
+
+    footer #f-tablet a {
+        margin: auto;
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+        margin-left: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        overflow: auto;
+    }
+
+    header h1 {
+        float: left;
+    }
+
+    header nav {
+        width: 35%;
+        float: right;
+    }
+
+    #p-sections section {
+        width: 33%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
