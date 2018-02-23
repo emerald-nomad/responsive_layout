@@ -1,0 +1,95 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Responsive Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+</head>
+<body>
+    <header id='home'>
+        <h1>Student Name</h1>
+        <nav>
+            <a href='#home'><b>Home</b></a>
+            <a href='#portfolio'><b>Portfolio</b></a>
+            <a href='#contact'><b>Contact</b></a>
+        </nav>
+    </header>
+    <main>
+        <div id='profile'>
+            <picture>
+                <source media="(min-width: 1024px)" srcset="images/responsive-layout-profile.png">
+                <source media="(min-width: 768px)" srcset="images/responsive-layout-profile-medium.png">
+                <source srcset="images/responsive-layout-profile-small.png">
+                <img src="images/responsive-layout-profile-small.png" alt="Profile pictue">
+            </picture>
+            <p>
+                Hi!, I'm a front-end developer who loves responsive design and css. I recently finished a degree in front end web development at Treehouse an am excited to put all my skills to use!
+            </p>
+       </div>
+       <div id="portfolio">
+           <h2>Portfolio</h2>
+            <section>
+                <img src="images/portfolio-1.png" alt="Portfolio 1">
+                <h3>Marketing Page</h3>
+                <p>
+                    This Project shows the front page of a marketing website meant for a specific business I'm interested in.
+                </p>
+            </section>
+            <section>
+                <img src="images/portfolio-2.png" alt="Portfolio 2">
+                <h3>Search Page</h3>
+                <p>
+                    This project searches through a specific database to find information that the user is trying to look up.
+                </p>
+            </section>
+            <section>
+                <img src="images/portfolio-3.png" alt="Portfolio 3">
+                <h3>Travel App</h3>
+                <p>
+                    This project compares travel times based on different transportation methods and tells you the best one.
+                </p>
+            </section>
+            <section>
+                <img src="images/portfolio-4.png" alt="Portfolio 4">
+                <h3>Map of Favorite Spots</h3>
+                <p>
+                    This project uses mapping api's to plot points for my favorite spots in the city for a do-it-yourself walking tour.
+                </p>
+            </section>
+            <section>
+                <img src="images/portfolio-5.png" alt="Portfolio 5">
+                <h3>Photo Gallery</h3>
+                <p>
+                    This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.
+                </p>
+            </section>
+            <section>
+                <img src="images/portfolio-6.png" alt="Portfolio 6">
+                <h3>Calculator</h3>
+                <p>
+                    Someone can enter in the numbers they want, and press the big blue button and get the result.
+                </p>
+            </section>
+       </div>
+       <div id='contact'>
+            <h2>Contact</h2>
+            <p>
+                If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!
+            </p>
+            <p>
+                Phone <b>+1(111)555-1234</b>
+            </p>
+            <p>
+                Email <b>email@yoursite.com</b>
+            </p>
+       </div>
+       <hr>
+       <footer>
+           <h4>Student name</h4>
+           <a href="#home"><h4>BACK TO TOP</h4></a>
+       </footer>
+    </main>
+</body>
+</html>
